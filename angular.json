@@ -67,7 +67,8 @@
               "browserTarget": "ems-ui:build:production"
             },
             "development": {
-              "browserTarget": "ems-ui:build:development"
+              "browserTarget": "ems-ui:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
