@@ -1,0 +1,20 @@
+nav{
+  background-color: #182C61;
+  padding: 10px;
+}
+.navbar-nav li a,.navbar-brand{
+  color: #fff;
+}
+.navbar-nav li a{
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.navbar-brand{
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.navbar-collapse{
+  margin-top: 4px;
+}
