@@ -1,10 +1,17 @@
+import { DepartmentComponent } from './department/department.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { AnnouncementsComponent } from './announcements/announcements.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {EmployeeListComponent} from "./employee-list/employee-list.component";
 
 const routes: Routes = [
-  {path:'',component:EmployeeListComponent}
+  {path:'',component:EmployeeListComponent},
+  {path:'announcements',component:AnnouncementsComponent},
+  {path:'attendance',component:AttendanceComponent},
+  {path:'department',component:DepartmentComponent}
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
