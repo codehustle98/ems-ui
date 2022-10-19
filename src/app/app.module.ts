@@ -10,6 +10,7 @@ import {SharedModule} from "./shared/shared.module";
 import { AttendanceComponent } from './attendance/attendance.component';
 import { DepartmentComponent } from './department/department.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AnnouncementsComponent } from './announcements/announcements.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     SharedModule
   ],
   providers: [],

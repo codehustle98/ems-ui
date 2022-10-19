@@ -1,5 +1,5 @@
 <div class="filter-container">
-  <input type="text" class="form-control mx-2" placeholder="Search employee">
+  <input type="text" class="form-control mx-2" placeholder="Search by name" [(ngModel)]="searchKey">
   <button type="button" class="btn btn-primary">Add</button>
 </div>
 
@@ -12,17 +12,18 @@
       <th>Date of birth</th>
       <th>Join date </th>
       <th>Department Name</th>
-      <th>action</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let employee of employees">
+    <tr *ngFor="let employee of employees | filter:'empName':searchKey">
       <td>{{employee.empName}}</td>
       <td>{{employee.empEmailId}}</td>
       <td>{{employee.empPhoneNo}}</td>
       <td>{{employee.empDob}}</td>
       <td>{{employee.empJoinDate}}</td>
       <td>{{employee.department?.deptName}}</td>
+      <td class="text-center"><i class="fa-solid fa-trash"></i></td>
     </tr>
   </tbody>
 </table>

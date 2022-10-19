@@ -10,6 +10,7 @@ import {Employee} from "../shared/domains/employee.domain";
 export class EmployeeListComponent implements OnInit {
 
   employees: Employee[]=[];
+  searchKey: string = "";
 
   constructor(private employeeService:EmployeeService) { }
 
