@@ -1,0 +1,18 @@
+<div class="container-fluid p-1 d-flex flex-row flex-wrap justify-content-start">
+  <div class="list birthday-list text-center">
+    <h5 class="text-center">Birthday Buddies</h5>
+    <hr/>
+    <ul *ngIf="dashboard?.employeeNames">
+      <li *ngFor="let name of dashboard?.employeeNames" class="d-flex flex-row flex-nowrap justify-content-start align-items-center">
+          <p [attr.data-letters]="getShortName(name)"></p>
+          <p>{{name | titlecase}}</p>
+      </li>
+    </ul>
+  </div>
+  <div class="dashboard">
+    <p>Total Employees : </p>
+    <p [attr.data-letters]="dashboard?.totalEmployees" class="d-block"></p>
+    <p>Total Departments : </p>
+    <p [attr.data-letters]="dashboard?.totalDepartments"></p>
+  </div>
+</div>

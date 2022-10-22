@@ -11,6 +11,9 @@ import { AttendanceComponent } from './attendance/attendance.component';
 import { DepartmentComponent } from './department/department.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
 import {FormsModule} from "@angular/forms";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import {FormsModule} from "@angular/forms";
     EmployeeListComponent,
     AttendanceComponent,
     DepartmentComponent,
-    AnnouncementsComponent
+    AnnouncementsComponent,
+    DashboardComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    CommonModule,
     SharedModule
   ],
   providers: [],

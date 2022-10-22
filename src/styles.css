@@ -3,6 +3,14 @@
 
 :root{
   --color-red:#e74c3c;
+  --color-theme:#182C61;
+}
+
+p{
+  margin-bottom: .6rem !important;
+}
+hr{
+  margin: .6rem 0!important;
 }
 
 body{
@@ -33,4 +41,7 @@ i{
 }
 i.fa-trash{
   color: var(--color-red);
+}
+ul{
+  list-style-type: none;
 }

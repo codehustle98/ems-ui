@@ -1,0 +1,45 @@
+.birthday-list ul li b{
+  font-size: .95rem;
+}
+.birthday-list ul li p{
+  font-size: .8rem;
+}
+.birthday-list h5{
+  letter-spacing: 2px;
+  font-size: .95rem;
+}
+.birthday-list ul{
+  padding-left: 0;
+}
+.list{
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  border: 2px solid var(--color-theme);
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+[data-letters]:before {
+  content:attr(data-letters);
+  display:inline-block;
+  font-size:1em;
+  width:2.5em;
+  height:2.5em;
+  line-height:2.5em;
+  text-align:center;
+  border-radius:50%;
+  background:plum;
+  vertical-align:middle;
+  margin-right:1em;
+  color:white;
+}
+.dashboard{
+  width: 20%;
+  border: 2px solid var(--color-theme);
+  text-align: center;
+  border-radius: 10px;
+}
+.container-fluid div{
+  margin: 1rem;
+}
