@@ -45,3 +45,17 @@ i.fa-trash{
 ul{
   list-style-type: none;
 }
+.checkin-btn{
+  background: #1abc9c !important;
+}
+.checkout-btn,.checkin-btn{
+  font-size: .9rem!important;
+  color: #fff !important;
+  text-transform: capitalize;
+  padding: 6px 15px!important;
+  border-radius: 5px;
+  border-color: initial;
+}
+.checkout-btn{
+  background: #e74c3c !important;
+}
