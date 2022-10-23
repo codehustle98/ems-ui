@@ -14,6 +14,7 @@ import {FormsModule} from "@angular/forms";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import {CommonModule} from "@angular/common";
+import { AddEditDepartmentModalComponent } from './department/add-edit-department-modal/add-edit-department-modal.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {CommonModule} from "@angular/common";
     DepartmentComponent,
     AnnouncementsComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    AddEditDepartmentModalComponent
   ],
   imports: [
     BrowserModule,

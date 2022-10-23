@@ -15,7 +15,7 @@
   <tr *ngFor="let dept of departments | filter:'deptName':searchKey">
     <td>{{dept.deptCode}}</td>
     <td>{{dept.deptName}}</td>
-    <td class="text-center"><i class="fa-solid fa-trash"></i></td>
+    <td class="text-center"><i class="fa-solid fa-trash" (click)="onDelete(dept.deptId)"></i></td>
   </tr>
   </tbody>
 </table>

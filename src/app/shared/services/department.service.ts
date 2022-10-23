@@ -12,4 +12,9 @@ export class DepartmentService {
     const url = "/ems/api/department";
     return this.$httpClient.get(url);
   }
+
+  deleteDepartment(deptId:number){
+    const url = `/ems/api/department/${deptId}`;
+    return this.$httpClient.delete(url);
+  }
 }

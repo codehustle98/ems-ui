@@ -26,4 +26,10 @@ export class DepartmentComponent implements OnInit {
       });
   }
 
+  onDelete(deptId:number){
+    this._deptService
+      .deleteDepartment(deptId)
+      .subscribe(() => this.getDepartmentsList());
+  }
+
 }
